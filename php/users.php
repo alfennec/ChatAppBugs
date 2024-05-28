@@ -4,7 +4,7 @@
     $outgoing_id = $_SESSION['unique_id'];
 
     ###### Ajouter du code ici : début
-    
+    $sql = "SELECT * FROM users WHERE NOT unique_id = {$outgoing_id} ORDER BY user_id DESC";
 
     ###### Fin
 
